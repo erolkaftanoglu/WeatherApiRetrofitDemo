@@ -1,0 +1,1 @@
+http://api.openweathermap.org/data/2.5/weather?q=Istanbul,tr&appid=f30682a8f9f3bcd0c78000447fbf23d8
