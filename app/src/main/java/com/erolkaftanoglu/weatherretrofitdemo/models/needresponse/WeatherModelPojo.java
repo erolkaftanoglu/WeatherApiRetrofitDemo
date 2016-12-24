@@ -1,4 +1,4 @@
-package com.erolkaftanoglu.weatherretrofitdemo.models.myresponse;
+package com.erolkaftanoglu.weatherretrofitdemo.models.needresponse;
 
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;

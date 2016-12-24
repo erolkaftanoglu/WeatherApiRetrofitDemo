@@ -1,6 +1,6 @@
 package com.erolkaftanoglu.weatherretrofitdemo;
 
-import com.erolkaftanoglu.weatherretrofitdemo.models.myresponse.WeatherModelPojo;
+import com.erolkaftanoglu.weatherretrofitdemo.models.needresponse.WeatherModelPojo;
 import com.erolkaftanoglu.weatherretrofitdemo.models.response.WeatherPojoModel;
 
 import retrofit.Call;
@@ -12,6 +12,7 @@ import retrofit.http.Query;
  */
 public interface MyApi {
     public static String url = "http://api.openweathermap.org";
+    public static String endpoint = "";
 
     @GET("/data/2.5/weather?q=Istanbul,tr&appid=f30682a8f9f3bcd0c78000447fbf23d8")
     Call<WeatherPojoModel> getStatusWeather();

@@ -1,6 +1,5 @@
 package com.erolkaftanoglu.weatherretrofitdemo;
 
-import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -9,7 +8,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import com.erolkaftanoglu.weatherretrofitdemo.models.myresponse.WeatherModelPojo;
+import com.erolkaftanoglu.weatherretrofitdemo.models.needresponse.WeatherModelPojo;
 import com.erolkaftanoglu.weatherretrofitdemo.models.response.WeatherPojoModel;
 
 import retrofit.Callback;
@@ -72,6 +71,8 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
+
+
     void getWeather(MyApi myApi, String city){
         myApi.getWeather(city, "f30682a8f9f3bcd0c78000447fbf23d8").enqueue(new Callback<WeatherModelPojo>() {
             @Override
